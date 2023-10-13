@@ -1,0 +1,712 @@
+.toppage {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/w-bg215.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  z-index: 1;
+}
+.toppage > figure {
+  width: 120px;
+}
+.toppage > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.toppage > h1 {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  font-family: poiret;
+  text-transform: uppercase;
+}
+.toppage > p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: redhat;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+.toppage > time {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: redhat;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.toppage > a {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  background-color: #735611;
+}
+.toppage > a > figure {
+  width: 100%;
+  height: 50%;
+}
+.toppage > a > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.toppage > #menu {
+  display: none;
+}
+.toppage > #menu:checked ~ .clicked {
+  opacity: 1;
+  visibility: visible;
+}
+.toppage > #menu:checked + label {
+  color: white;
+}
+.toppage > label {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 70px;
+  color: black;
+  font-family: redhat;
+  text-transform: uppercase;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+}
+.toppage > .clicked {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  background-image: url(../img/artmenu7.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 100;
+}
+.toppage > .clicked > ul {
+  width: 20%;
+  height: 70%;
+  list-style-type: none;
+}
+.toppage > .clicked > ul > li {
+  width: 100%;
+  height: 16.5%;
+}
+.toppage > .clicked > ul > li > a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: poiret;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+.toppage > .clicked > ul > li > a:hover {
+  color: grey;
+}
+
+.ourstory {
+  width: 100%;
+  height: 70vh;
+}
+.ourstory > div {
+  width: 50%;
+  height: 100%;
+}
+.ourstory > div > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.ourstory > div > a > figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.ourstory > div > a > figure:hover::before {
+  background-color: rgba(0, 0, 0, 0.212);
+}
+.ourstory > div > a > figure::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.463);
+  transition: 0.6s;
+}
+.ourstory > div > a > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ourstory > div > a > figure > figcaption {
+  position: absolute;
+  text-transform: uppercase;
+  width: 250px;
+  height: 250px;
+  top: calc(50% - 125px);
+  left: calc(50% - 125px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: poiret;
+  font-size: 50px;
+  font-weight: bold;
+}
+.ourstory > span {
+  width: 50%;
+  height: 100%;
+}
+.ourstory > span > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.ourstory > span > a > figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.ourstory > span > a > figure:hover::before {
+  background-color: rgba(0, 0, 0, 0.212);
+}
+.ourstory > span > a > figure::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.463);
+  transition: 0.6s;
+  z-index: 0;
+}
+.ourstory > span > a > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ourstory > span > a > figure > figcaption {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: poiret;
+  font-weight: bold;
+}
+
+.ourwine {
+  width: 100%;
+  height: 100vh;
+}
+.ourwine > h2 {
+  width: 100%;
+  height: 20%;
+  font-family: poiret;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.ourwine > span {
+  width: 100%;
+  height: 70%;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.ourwine > span > div {
+  width: 20%;
+  height: 100%;
+}
+.ourwine > span > div > a {
+  width: 100%;
+  height: 79%;
+}
+.ourwine > span > div > a > figure {
+  width: 100%;
+  height: 100%;
+}
+.ourwine > span > div > a > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ourwine > span > div > h5 {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 20px;
+  font-family: redhat;
+  font-weight: normal;
+}
+.ourwine > span > div > h5:hover {
+  color: grey;
+}
+.ourwine > span > div > span {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: redhat;
+}
+.ourwine > span > div > span > p {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.ourwine > span > div > span > del {
+  width: 50%;
+  height: 100%;
+  color: grey;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.ourwine > span > div > div {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ourwine > span > div > div > a {
+  text-decoration: none;
+  color: white;
+  background-color: #735611;
+  padding: 10px 20px 10px 20px;
+  font-family: redhat;
+  text-transform: uppercase;
+  transition: 0.4s;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.ourwine > span > div > div > a:hover {
+  background-color: black;
+}
+.ourwine > span > div > p {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: redhat;
+}
+
+.experience {
+  width: 100%;
+  height: 65vh;
+  background-image: url(../img/w-bg003.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+}
+.experience::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.518);
+}
+.experience > h2 {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: white;
+  font-family: poiret;
+  font-size: 60px;
+  text-transform: uppercase;
+  position: relative;
+}
+.experience > p {
+  width: 50%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: redhat;
+  font-size: 22px;
+  text-align: center;
+  position: relative;
+}
+.experience > div {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+.experience > div > a {
+  text-decoration: none;
+  font-family: redhat;
+  padding: 15px 60px 15px 60px;
+  background-color: white;
+  color: black;
+  transition: 0.4s;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.experience > div > a:hover {
+  background-color: #735611;
+  color: white;
+}
+
+.midpage {
+  width: 100%;
+  height: 40vh;
+}
+.midpage > div {
+  width: 33%;
+  height: 100%;
+  position: relative;
+}
+.midpage > div:hover::before {
+  background-color: rgba(0, 0, 0, 0.212);
+}
+.midpage > div::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.463);
+  transition: 0.4s;
+}
+.midpage > div:nth-of-type(1) {
+  background-image: url(../img/w030.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: round;
+}
+.midpage > div:nth-of-type(2) {
+  background-image: url(../img/w013.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: round;
+}
+.midpage > div:nth-of-type(3) {
+  background-image: url(../img/w-bg-102.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: round;
+}
+.midpage > div > h3 {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: white;
+  font-family: poiret;
+  text-transform: uppercase;
+  font-size: 30px;
+  position: relative;
+}
+.midpage > div > div {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.midpage > div > div > a {
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  transition: 0.4s;
+  font-family: redhat;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.midpage > div > div > a:hover {
+  background-color: #735611;
+  color: white;
+}
+
+.event {
+  width: 100%;
+  height: 100vh;
+}
+.event > h2 {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: poiret;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.event > span {
+  width: 100%;
+  height: 70%;
+  margin-bottom: 5%;
+  justify-content: center;
+  align-content: center;
+}
+.event > span > div {
+  width: 20%;
+  height: 100%;
+  margin: 25px;
+}
+.event > span > div > a {
+  width: 100%;
+  height: 50%;
+}
+.event > span > div > a > figure {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.event > span > div > a > figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.4s;
+}
+.event > span > div > a > figure:hover::after {
+  background-color: rgba(0, 0, 0, 0.388);
+}
+.event > span > div > a > figure:hover > img {
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+}
+.event > span > div > a > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: 0.4s;
+}
+.event > span > div > h5 {
+  width: 100%;
+  height: 8%;
+  font-family: redhat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  font-size: 19px;
+  transition: 0.4s;
+  text-transform: capitalize;
+}
+.event > span > div > h5:hover {
+  color: #735611;
+}
+.event > span > div > p {
+  width: 100%;
+  height: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+  font-family: redhat;
+  color: gray;
+}
+.event > span > div > div {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.event > span > div > div > a {
+  font-family: redhat;
+  color: white;
+  text-decoration: none;
+  background-color: #735611;
+  transition: 0.4s;
+  padding: 5px 15px 5px 15px;
+  border-radius: 3px;
+}
+.event > span > div > div > a:hover {
+  background-color: black;
+}
+
+footer {
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+  justify-content: center;
+}
+footer > div {
+  width: 33%;
+  height: 100%;
+  align-content: center;
+}
+footer > div > * {
+  margin: 15px;
+}
+footer > div > h2 {
+  color: white;
+  width: 100%;
+  height: 15%;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: poiret;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > div > p {
+  width: 100%;
+  height: 15%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: redhat;
+  text-align: center;
+  font-size: 20px;
+}
+footer > div:nth-of-type(1) > a {
+  color: white;
+  text-decoration: none;
+  font-family: redhat;
+  width: 100%;
+  height: 15%;
+  transition: 0.4s;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+footer > div:nth-of-type(1) > a:hover {
+  color: #735611;
+}
+footer > div:nth-of-type(2) > p {
+  transition: 0.4s;
+  cursor: default;
+  align-items: center;
+}
+footer > div:nth-of-type(2) > p:hover {
+  color: #735611;
+}
+footer > div:nth-of-type(2) > div {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer > div:nth-of-type(2) > div > span {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > div:nth-of-type(2) > div > span > a {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+  transition: 0.4s;
+}
+footer > div:nth-of-type(2) > div > span > a:hover {
+  color: #735611;
+}
+footer > div:nth-of-type(3) > div {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+footer > div:nth-of-type(3) > div > a {
+  color: white;
+  background-color: #735611;
+  text-decoration: none;
+  font-family: redhat;
+  font-size: 20px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+footer > div:nth-of-type(3) > div > a:hover {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=master.css.map */

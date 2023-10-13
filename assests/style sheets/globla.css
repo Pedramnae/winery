@@ -1,0 +1,19 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@font-face {
+  font-family: poiret;
+  src: url(../fonts/PoiretOne-Regular.ttf);
+}
+@font-face {
+  font-family: redhat;
+  src: url(../fonts/RedHatText-VariableFont_wght.ttf);
+}/*# sourceMappingURL=globla.css.map */
